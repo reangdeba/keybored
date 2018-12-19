@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block toggle %}
+  <div class="dropdown">
+    <a class="sidebar-nav-item dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Controls</a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="/keyplay">Keyboard</a>
+    <a class="dropdown-item" href="/mouseplay">Mouse</a>
+    <a class="dropdown-item" href="/espplay">Play using touch!</a></div>
+  </div>
+{% endblock %}
+
+{% block main %}
+    <div class="board">
+      <div class="row mx-auto">
+        <div onmouseover="playc5()" onmouseout="stopc5()" class="rounded square yellow hvr-shrink"><div class="note">C</div></div>
+        <div onmouseover="playd5()" onmouseout="stopd5()" class="rounded square blue hvr-shrink"><div class="note">D</div></div>
+        <div onmouseover="playe5()" onmouseout="stope5()" class="rounded square magenta hvr-shrink"><div class="note">E</div></div>
+        <div onmouseover="playf5()" onmouseout="stopf5()" class="rounded square purple hvr-shrink"><div class="note">F</div></div>
+        <div onmouseover="playg5()" onmouseout="stopg5()" class="rounded square green hvr-shrink"><div class="note">G</div></div>
+        <div onmouseover="playa5()" onmouseout="stopa5()" class="rounded square orange hvr-shrink"><div class="note">A</div></div>
+        <div onmouseover="playb5()" onmouseout="stopb5()" class="rounded square black hvr-shrink"><div class="note">B</div></div>
+      </div>
+    </div>
+
+{% endblock %}

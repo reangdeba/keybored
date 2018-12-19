@@ -1,0 +1,161 @@
+{% extends "layout.html" %}
+
+{% block toggle %}
+  <div class="dropdown">
+    <a class="sidebar-nav-item dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Controls</a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="/keyplay">Keyboard</a>
+    <a class="dropdown-item" href="/mouseplay">Mouse</a>
+    <a class="dropdown-item" href="/espplay">Play using touch!</a></div>
+  </div>
+{% endblock %}
+
+{% block main %}
+    <div class="board">
+      <div class="row mx-auto">
+        <div id="C" class="rounded square-key yellow"><div class="note">C</div></div>
+        <div id="C#" class="rounded sharp black"><div class="note-sharp">C#</div></div>
+        <div id="D" class="rounded square-key blue"><div class="note">D</div></div>
+        <div id="D#" class="rounded sharp black"><div class="note-sharp">D#</div></div>
+        <div id="E" class="rounded square-key magenta"><div class="note">E</div></div>
+        <div id="F" class="rounded square-key purple"><div class="note">F</div></div>
+        <div id="F#" class="rounded sharp black"><div class="note-sharp">F#</div></div>
+        <div id="G" class="rounded square-key green"><div class="note">G</div></div>
+        <div id="G#" class="rounded sharp black"><div class="note-sharp">G#</div></div>
+        <div id="A" class="rounded square-key orange"><div class="note">A</div></div>
+        <div id="A#" class="rounded sharp black"><div class="note-sharp">A#</div></div>
+        <div id="B" class="rounded square-key black"><div class="note">B</div></div>
+      </div>
+    </div>
+
+    <script>
+        var c5 = document.getElementById("c5");
+        var cs = document.getElementById("cs");
+        var ds = document.getElementById("ds");
+        var fs = document.getElementById("fs");
+        var gs = document.getElementById("gs");
+        var as = document.getElementById("as");
+        var d5 = document.getElementById("d5");
+        var e5 = document.getElementById("e5");
+        var f5 = document.getElementById("f5");
+        var g5 = document.getElementById("g5");
+        var a5 = document.getElementById("a5");
+        var b5 = document.getElementById("b5");
+
+        window.addEventListener("keydown", event => {
+            if (event.key == "z") {
+                c5.play();
+                document.getElementById("C").style.background = "#ac4142";
+            }
+            else if (event.key == "x") {
+                d5.play();
+                document.getElementById("D").style.background = "#ac4142";
+            }
+            else if (event.key == "c") {
+                e5.play();
+                document.getElementById("E").style.background = "#ac4142";
+            }
+            else if (event.key == "v") {
+                f5.play();
+                document.getElementById("F").style.background = "#ac4142";
+            }
+            else if (event.key == "b") {
+                g5.play();
+                document.getElementById("G").style.background = "#ac4142";
+            }
+            else if (event.key == "n") {
+                a5.play();
+                document.getElementById("A").style.background = "#ac4142";
+            }
+            else if (event.key == "m") {
+                b5.play();
+                document.getElementById("B").style.background = "#ac4142";
+            }
+            else if (event.key == "j") {
+                as.play();
+                document.getElementById("A#").style.background = "#ac4142";
+            }
+            else if (event.key == "h") {
+                gs.play();
+                document.getElementById("G#").style.background = "#ac4142";
+            }
+            else if (event.key == "g") {
+                fs.play();
+                document.getElementById("F#").style.background = "#ac4142";
+            }
+            else if (event.key == "s") {
+                cs.play();
+                document.getElementById("C#").style.background = "#ac4142";
+            }
+            else if (event.key == "d") {
+                ds.play();
+                document.getElementById("D#").style.background = "#ac4142";
+            }
+        });
+
+        window.addEventListener("keyup", event => {
+            if (event.key == "z") {
+                c5.pause();
+                c5.currentTime = 0;
+                document.getElementById("C").style.background = "#ffff00";
+            }
+            else if (event.key == "x") {
+                d5.pause();
+                d5.currentTime = 0;
+                document.getElementById("D").style.background = "#4286f4";
+            }
+            else if (event.key == "c") {
+                e5.pause();
+                e5.currentTime = 0;
+                document.getElementById("E").style.background = "#a52986";
+            }
+            else if (event.key == "v") {
+                f5.pause();
+                f5.currentTime = 0;
+                document.getElementById("F").style.background = "#9d00ff";
+            }
+            else if (event.key == "b") {
+                g5.pause();
+                g5.currentTime = 0;
+                document.getElementById("G").style.background = "#24b749";
+            }
+            else if (event.key == "n") {
+                a5.pause();
+                a5.currentTime = 0;
+                document.getElementById("A").style.background = "#ffae00";
+            }
+            else if (event.key == "m") {
+                b5.pause();
+                b5.currentTime = 0;
+                document.getElementById("B").style.background = "black";
+            }
+            else if (event.key == "j") {
+                as.pause();
+                as.currentTime = 0;
+                document.getElementById("A#").style.background = "#000";
+            }
+            else if (event.key == "h") {
+                gs.pause();
+                gs.currentTime = 0;
+                document.getElementById("G#").style.background = "#000";
+            }
+            else if (event.key == "g") {
+                fs.pause();
+                fs.currentTime = 0;
+                document.getElementById("F#").style.background = "#000";
+            }
+            else if (event.key == "s") {
+                cs.pause();
+                cs.currentTime = 0;
+                document.getElementById("C#").style.background = "#000";
+            }
+            else if (event.key == "d") {
+                ds.pause();
+                ds.currentTime = 0;
+                document.getElementById("D#").style.background = "#000";
+            }
+        });
+
+    </script>
+
+{% endblock %}

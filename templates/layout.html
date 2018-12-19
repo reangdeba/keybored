@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="static/board.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js" integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/png" sizes="16x16" href="https://res.cloudinary.com/reangdeba/image/upload/v1536930580/black-circle-mask-to-fill-compass-outline-2.png">
+
+        <title>Keybored </title>
+
+    </head>
+
+    <body>
+        <div class="sidebar">
+            <div class="container sidebar-sticky">
+            <div class="sidebar-about">
+                <h1><strong><a href="/">Keybored</a></strong></h1>
+            </div>
+                <nav class="sidebar-nav">
+                    {% block toggle %}{% endblock %}
+                    <a href="/about" class="sidebar-nav-item">
+                        How To
+                    </a>
+                    <a href="/about" class="sidebar-nav-item">
+                        Demo Video
+                    </a>
+                    <p class="sidebar-text">
+                    <span title="Code on GitHub"><a id="github" href="#"><i class="fab fa-github"></i></a></span> &nbsp; &nbsp; &nbsp;
+                    <span title="Try on facebook"><a id="facebook" href="/random"><i class="fab fa-facebook-square"></i></a></span><br>
+                    With <i class="fas fa-heart-broken"></i> from
+                    <a href="mailto:reang.bade@gmail.com" class="sidebar-nav-item">
+                        Reang
+                    </a>
+                    and
+                    <a href="mailto:pcgotan1998@gmail.com" class="sidebar-nav-item">
+                        Prashant
+                    </a>
+                    Merry Christmas! <i class="fas fa-heart-broken"></i>  Happy New Year!<br>
+                    </p>
+                </nav>
+            </div>
+        </div>
+        <main class="content">
+            {% block main %}{% endblock %}
+        </main>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+        <audio id="c5">
+            <source src="static/c5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="cs">
+            <source src="static/db5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="ds">
+            <source src="static/eb5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="fs">
+            <source src="static/gb5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="gs">
+            <source src="static/ab5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="as">
+            <source src="static/bb5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="d5">
+            <source src="static/d5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="e5">
+            <source src="static/e5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="f5">
+            <source src="static/f5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="g5">
+            <source src="static/g5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="a5">
+            <source src="static/a5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+        <audio id="b5">
+            <source src="static/b5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+        </audio>
+
+        <script>
+        var c5 = document.getElementById("c5");
+        var cs = document.getElementById("cs");
+        var ds = document.getElementById("ds");
+        var fs = document.getElementById("fs");
+        var gs = document.getElementById("gs");
+        var as = document.getElementById("as");
+        var d5 = document.getElementById("d5");
+        var e5 = document.getElementById("e5");
+        var f5 = document.getElementById("f5");
+        var g5 = document.getElementById("g5");
+        var a5 = document.getElementById("a5");
+        var b5 = document.getElementById("b5");
+        
+        function playc5() {
+            c5.play();
+        }
+
+        function stopc5() {
+            c5.pause();
+            c5.currentTime = 0;
+        }
+
+        function playd5() {
+            d5.play();
+        }
+
+        function stopd5() {
+            d5.pause();
+            d5.currentTime = 0;
+        }
+
+        function playe5() {
+            e5.play();
+        }
+
+        function stope5() {
+            e5.pause();
+            e5.currentTime = 0;
+        }
+
+        function playf5() {
+            f5.play();
+        }
+
+        function stopf5() {
+            f5.pause();
+            f5.currentTime = 0;
+        }
+
+        function playg5() {
+            g5.play();
+        }
+
+        function stopg5() {
+            g5.pause();
+            g5.currentTime = 0;
+        }
+
+        function playa5() {
+            a5.play();
+        }
+
+        function stopa5() {
+            a5.pause();
+            a5.currentTime = 0;
+        }
+
+        function playb5() {
+            b5.play();
+        }
+
+        function stopb5() {
+            b5.pause();
+            b5.currentTime = 0;
+        }
+
+        // document.addEventListener('keydown', function(e) {
+        //     if (e.keyCode == 90) {
+        //         c5.play();
+        //     }
+        //     else if (e.keyCode == 88) {
+        //         d5.play();
+        //     }
+        // });
+        // window.addEventListener("keydown", event => {
+        //     if (event.key == "v") {
+        //     document.body.style.background = "violet";
+        //     }
+        // });
+        // window.addEventListener("keyup", event => {
+        //     if (event.key == "v") {
+        //     document.body.style.background = "";
+        //     }
+        // });
+        </script>
+    </body>
+
+</html>

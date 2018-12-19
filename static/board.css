@@ -1,0 +1,265 @@
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * Container
+ * Reverse layout
+ * Themes
+ */
+
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+
+ @import url('https://fonts.googleapis.com/css?family=Muli');
+ html {
+    font-family: 'Muli', sans-serif;
+  }
+  @media (min-width: 48em) {
+    html {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 58em) {
+    html {
+      font-size: 20px;
+      font-family: 'Muli', sans-serif;
+    }
+  }
+  
+  
+  /*
+   * Sidebar
+   *
+   * Flexible banner for housing site name, intro, and "footer" content. Starts
+   * out above content in mobile and later moves to the side with wider viewports.
+   */
+  
+  .sidebar {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: rgba(255,255,255,.5);
+    background-color: black;
+    font-family: 'Muli', sans-serif;
+  }
+  @media (min-width: 48em) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 20%;
+      text-align: left;
+      font-family: 'Muli', sans-serif;
+    }
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  /* About section */
+  .sidebar-about h1 {
+    color: #fff;
+    margin-top: 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 2.25rem;
+  }
+  
+  /* Sidebar nav */
+  .sidebar-nav {
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-nav-item {
+    display: block;
+    line-height: 1.75;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+  }
+  a.sidebar-nav-item:hover,
+  a.sidebar-nav-item:focus {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+  }
+  .sidebar-nav-item:hover,
+  .sidebar-nav-item:focus {
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+  }
+  .sidebar-nav-item.active {
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+  }
+  p.sidebar-text {
+    display: block;
+    margin-top: 60%;
+    line-height: 1.75;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+  }
+
+#github, #facebook {
+    font-size: 300%;
+}
+.board {
+    margin-left: 9%;
+}
+
+.square {
+    height: 400px;
+    width: 130px;
+    margin-top: 20%;
+    margin-right: 0.05%;
+    margin-left: 0.05%;
+    font-family: 'Muli', sans-serif;
+}
+
+.square-key {
+    height: 400px;
+    width: 100px;
+    margin-top: 20%;
+    margin-right: 0.05%;
+    margin-left: 0.05%;
+    font-family: 'Muli', sans-serif;
+}
+.sharp {
+    height: 250px;
+    width: 40px;
+    margin-top: 20%;
+    margin-right: 0.05%;
+    margin-left: 0.05%;
+    font-family: 'Muli', sans-serif;
+}
+
+.blue {
+    background-color: #4286f4;
+}
+
+.magenta {
+    background-color: #a52986;
+}
+
+.purple {
+    background-color: #9d00ff;
+}
+
+.green {
+    background-color: #24b749;
+}
+
+.yellow {
+    background-color: #ffff00;
+}
+
+.orange {
+    background-color: #ffae00;
+}
+
+.black, .btn-black {
+    background-color: black;
+    color: white;
+    font-family: 'Muli', sans-serif;
+}
+
+.content {
+    margin-left: 21%;
+    margin-right: 0.2%;
+    font-family: 'Muli', sans-serif;
+}
+
+.masthead, #meme {
+    text-align: center;
+    margin-bottom: 7%;
+    font-family: 'Muli', sans-serif;
+}
+.active {
+    background-color: #ac4142;
+}
+.logo {
+    text-align: center;
+    font-size: 1000%;
+    color: red;
+    font-family: 'Muli', sans-serif;
+}
+
+.headline h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+}
+.tagline {
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+    font-family: 'Muli', sans-serif;
+}
+
+.note {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 400px; 
+    font-size: 4rem;
+    font-family: 'Muli', sans-serif;
+}
+
+.note-sharp {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px; 
+    font-size: 1.5rem;
+    font-family: 'Muli', sans-serif;
+}
+.dropdown-menu {
+    background-color: black;  
+}
+
+/* Thanks to
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.3.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover */
+
+.hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    font-family: 'Muli', sans-serif;
+  }
+  .hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    font-family: 'Muli', sans-serif;
+  }
+

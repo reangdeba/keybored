@@ -1,0 +1,5 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <img id="meme" alt="{{ top }}" class="border" src="http://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://imgflip.com/s/meme/Roll-Safe-Think-About-It.jpg"/>
+{% endblock %}
