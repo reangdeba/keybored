@@ -1,7 +1,7 @@
 # keybored
 
 ### [1] tl;dr if you want to fire it up now
-Assuming that you have the dependency installed:
+Assuming that you have the dependencies installed:
 
 Clone or download the repository.
 
