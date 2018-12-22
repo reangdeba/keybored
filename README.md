@@ -33,7 +33,7 @@ In case any error shows up, it should be because you do not have [flask](http://
 ***Note***: This circuit will work only with the following Arduino types: Leonardo, Esplora, Zero, Due and MKR family. We tested with Arduino Nano, it didn't work :P. So, use Leonardo or the like.
 
 * Wire the circuit as shown:
-{Img here}
+![circuit diagram](keybored_bb.jpg)
 
 * Download the CapacitiveSensor library in your Arduino IDE.
 * Open touch.ino
